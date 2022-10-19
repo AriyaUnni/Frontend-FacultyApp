@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"><br>
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12">
+                    <label for="Faculty Name">Faculty Name</label>
+                    <input type="text" class="form-control" name="facultyName"[(ngModel)]="facultyName">
+        
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12">
+                    <label for="Type">Department</label>
+                 <input type="text" class="form-control" name="department"[(ngModel)]="department">
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12">
+                     <label for="Description">Email Id</label>
+                     <input type="email" name="email" id="" class="form-control" [(ngModel)]="email">
+
+                  </div>
+                  <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12">
+                    <label for="Capacity">Mobile Number</label>
+                    <input type="text" class="form-control" name="mobileNo"[(ngModel)]="mobileNo">
+
+                 </div>
+
+                
+                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12"><br>
+            
+                        
+                       <button class="btn btn-success" [disabled]="status" (click)="readValues()">Submit</button>
+            
+                 </div>
+        </div>
+    </div>
+</div>
